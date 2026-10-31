@@ -1,0 +1,29 @@
+/* Cleaner public-facing response layout for the AI companion. */
+.assistant-layout { display: block; max-width: 980px; margin: 0 auto; }
+.assistant-layout .chat-panel { border-radius: 18px; box-shadow: 0 12px 30px #263b2f0a; }
+.chat-header { padding: 20px 22px; }
+.companion-icon { width: 40px; height: 40px; font-size: 21px; }
+.chat-header strong { font-size: 13px; }
+.chat-header small { font-size: 10px; }
+.messages { min-height: 250px; height: auto; max-height: 490px; padding: 26px 26px 18px; gap: 16px; }
+.message { padding: 14px 17px; border-radius: 14px; max-width: 88%; font-size: 13px; line-height: 1.65; white-space: normal; }
+.message.assistant { border-top-left-radius: 4px; }
+.message.assistant p { margin: 0 0 10px; color: var(--ink); }
+.message.assistant p:last-child { margin-bottom: 0; }
+.message.assistant ol, .message.assistant ul { margin: 9px 0 2px; padding-left: 21px; }
+.message.assistant li { margin: 5px 0; }
+.message.user { border-top-right-radius: 4px; }
+.loading-message { opacity: .68; }
+.prompt-chips { gap: 7px; padding: 0 22px 18px; }
+.prompt-chips button { font-size: 10px; background: #fbfbf6; padding: 7px 11px; }
+.chat-input { padding: 17px 20px; background: #fcfcf8; }
+.chat-input input { font-size: 13px; }
+.chat-results, .chat-plan { max-width: 980px; margin-left: auto; margin-right: auto; }
+.chat-results { margin-top: 28px; }
+.chat-plan { margin-top: 18px; }
+.chat-plan .plan-result { background: #e9eddf; border: 0; border-radius: 14px; padding: 23px; margin: 0; }
+.chat-plan .plan-stop { padding: 8px 0; border-bottom: 1px solid #d7decf; }
+@media (max-width: 720px) {
+  .messages { min-height: 270px; max-height: 430px; padding: 18px; }
+  .message { max-width: 96%; font-size: 12px; }
+}

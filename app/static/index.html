@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e35">
+  <title>Weekend Roulette · Phnom Penh</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/companion.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Weekend Roulette home"><span class="brand-mark">w<span>r</span></span><span>weekend<span class="brand-light">roulette</span></span></a>
+    <nav aria-label="Main navigation">
+      <button class="nav active" data-tab="explore">Explore</button>
+      <button class="nav" data-tab="assistant">AI companion <span class="tiny-star">✦</span></button>
+      <button class="nav" data-tab="insights">Behind the picks</button>
+    </nav>
+    <div class="location"><span class="location-dot"></span> Phnom Penh, Cambodia</div>
+  </header>
+  <div class="demo-banner"><span>THE DEMO EDITION</span> Fictional places. Real possibilities for your project. All listings, prices, hours, and coordinates are synthetic.</div>
+  <main>
+    <section id="explore" class="view active">
+      <section class="hero">
+        <div class="hero-copy"><div class="eyebrow"><span></span> A LITTLE LESS SCROLLING, A LITTLE MORE LIVING</div>
+          <h1>Your weekend.<br>A different <em>direction.</em></h1>
+          <p>Find a quiet corner, try something new, or leave it to chance. Your next little adventure starts here.</p>
+          <div class="hero-actions"><button id="hero-roulette" class="button dark">✧ Surprise me <span>↗</span></button><button class="button text-button" id="ask-companion">Plan with AI <span>↗</span></button></div>
+          <div class="hero-proof"><span class="avatar">☀</span><span><strong>150 demo places</strong><br>One city. Plenty of possibilities.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a Phnom Penh-inspired weekend scene" role="img">
+          <svg viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#eee8d5"/><stop offset="1" stop-color="#e3e3cb"/></linearGradient><pattern id="water" width="75" height="22" patternUnits="userSpaceOnUse"><path d="M8 12h34m12 0h10" stroke="#afc6ad" stroke-width="2" stroke-linecap="round"/></pattern></defs>
+            <rect width="600" height="460" rx="28" fill="url(#sky)"/><circle cx="442" cy="99" r="50" fill="#e6ad68"/>
+            <path d="M0 267Q130 225 257 269T600 259V460H0Z" fill="#c8d5be"/><path d="M0 304Q160 274 300 314T600 300V460H0Z" fill="#c0cdb7"/>
+            <path d="M0 365Q200 306 370 355T600 344V460H0Z" fill="#a3bbad"/><path d="M0 365Q200 306 370 355T600 344V460H0Z" fill="url(#water)"/>
+            <path d="M115 290h283v25H115z" fill="#ba956e"/><path d="M142 221h232v71H142z" fill="#ead6ac"/>
+            <path d="M124 227l44-46h182l42 46Z" fill="#b57953"/><path d="M153 188l42-35h124l43 35Z" fill="#c48a59"/>
+            <path d="M220 156l37-37 37 37Z" fill="#ad714b"/><path d="M248 121l9-43 9 43Z" fill="#9d7748"/>
+            <path d="M161 236v56m30-56v56m32-56v56m67-56v56m32-56v56m30-56v56" stroke="#bda477" stroke-width="8"/>
+            <path d="M245 252q13-23 26 0v40h-26Z" fill="#877b58"/>
+            <path d="M65 315q5-112 8-164m0 19q-40-50-60-14 31-5 60 14m0 0q18-60 52-35-29 10-52 35m0-7q-6-64-30-57 8 26 30 57m0 8q34-31 55-1-27-3-55 1" fill="#597b5a" stroke="#597b5a" stroke-width="7" stroke-linecap="round"/>
+            <path d="M486 315q-4-95-1-144m0 10q-32-47-57-17 31 0 57 17m0 0q19-57 47-31-22 7-47 31m0-4q0-58-24-52 8 23 24 52m0 9q31-24 53 3-25-6-53-3" fill="#73936b" stroke="#73936b" stroke-width="7" stroke-linecap="round"/>
+            <path d="M379 396h96l-18 13h-60Z" fill="#7c6952"/><path d="M426 395v-38l27 33h-27" fill="#f5e9ce" stroke="#8d805e" stroke-width="2"/>
+            <path d="M180 86q9-10 18 0 9-10 18 0m-59 19q6-7 12 0 6-7 12 0" fill="none" stroke="#819075" stroke-width="2"/>
+          </svg>
+          <span class="art-note">A city worth wandering.</span><div class="floating-note"><span>↗</span><div>Take the scenic route.<small>PHNOM PENH · DEMO COLLECTION</small></div></div>
+        </div>
+      </section>
+      <section class="discover-heading"><div><div class="eyebrow">MAKE A LITTLE ROOM FOR SOMETHING NEW</div><h2>What’s your kind of day?</h2></div><span class="hand-note">Go on, pick a mood ↙</span></section>
+      <div class="mood-row" aria-label="Mood filters">
+        <button class="mood active" data-mood="any">✦ A bit of everything</button><button class="mood" data-mood="relaxed">☁ Slow & easy</button><button class="mood" data-mood="curious">◎ Curious mind</button><button class="mood" data-mood="social">☺ With my people</button><button class="mood" data-mood="adventurous">↗ Something different</button><button class="mood" data-mood="romantic">♡ Just the two of us</button>
+      </div>
+      <div class="explore-layout">
+        <aside class="filters">
+          <div class="filter-title"><h3>Your day, your way</h3><button id="reset" class="link-button">Reset</button></div>
+          <label for="budget">Budget per person <strong id="budget-label">$25</strong></label><input id="budget" type="range" min="0" max="60" value="25"><div class="range-ends"><span>$0</span><span>$60</span></div>
+          <label for="minutes">Time to explore</label><select id="minutes"><option value="60">1 hour</option><option value="120">2 hours</option><option value="240" selected>Half a day · 4 hours</option><option value="480">A full day · 8 hours</option></select>
+          <label for="group-type">Who’s coming?</label><select id="group-type"><option value="any">Anyone & everyone</option><option value="solo">Just me</option><option value="friends">Friends</option><option value="family">Family</option><option value="couple">My partner</option></select>
+          <label for="group-size">Number of people</label><input id="group-size" type="number" min="1" max="30" value="2">
+          <label for="district">Neighborhood</label><select id="district"><option value="any">All neighborhoods</option></select>
+          <label for="category">Type of place</label><select id="category"><option value="any">All kinds of places</option></select>
+          <label for="environment">Setting</label><select id="environment"><option value="any">Indoors or outdoors</option><option value="indoor">Indoors</option><option value="outdoor">Outdoors</option><option value="mixed">A mix of both</option></select>
+          <label class="check"><input id="rain" type="checkbox"> Rain-friendly only</label><label class="check"><input id="accessible" type="checkbox"> Wheelchair access</label>
+          <p class="filter-note">Costs include demo entry, food, and transport estimates. All details are fictional.</p>
+        </aside>
+        <div class="results-area">
+          <form class="search-bar" id="search-form"><span aria-hidden="true">⌕</span><label class="sr-only" for="query">Describe your ideal day</label><input id="query" placeholder="A quiet cafe, a creative afternoon, a sunset walk…" maxlength="1200"><button class="button dark" type="submit">Find my day ↗</button></form>
+          <div class="results-top"><p id="results-count" aria-live="polite">Finding your next little adventure…</p><button id="roulette" class="link-button">✧ Shuffle the possibilities</button></div>
+          <div id="search-status" class="status" role="status"></div><div id="cards" class="card-grid"></div>
+          <button id="load-more" class="button outline" hidden>Show more places</button>
+          <section class="plan-panel"><div><div class="eyebrow">YOUR LITTLE DAY OUT</div><h3>A few good stops, one lovely day.</h3><p>Add up to 3 places to compare costs and build a demo stop list.</p></div><div id="saved-list" class="saved-list"></div><button id="build-plan" class="button dark" disabled>Check my day ↗</button><div id="plan-result" aria-live="polite"></div></section>
+        </div>
+      </div>
+    </section>
+    <section id="assistant" class="view">
+      <div class="page-heading"><div class="eyebrow">LESS PLANNING. MORE POSSIBILITY.</div><h1>A little help<br>finding <em>your day.</em></h1><p>Tell your companion what you’re in the mood for. Your Explore filters come along.</p></div>
+      <div class="agent-mode" id="agent-mode">Share your mood, group, time, or budget — your companion will suggest a few fitting places.</div>
+      <div class="assistant-layout"><div class="chat-panel"><div class="chat-header"><span class="companion-icon">✦</span><div><strong>Your weekend companion</strong><small>Grounded in our fictional Phnom Penh collection</small></div><button id="clear-chat" class="link-button">Start fresh</button></div><div id="messages" class="messages" role="log" aria-live="polite"><div class="message assistant">Hey, wanderer. What would make a good day for you? Try “Plan a relaxed indoor afternoon under $20 for 4 friends.”</div></div>
+      <div class="prompt-chips"><button data-prompt="Plan an indoor afternoon under $20 for 4 friends">An afternoon with friends ↗</button><button data-prompt="Find a quiet place for coffee under $12">A quiet coffee break ↗</button><button data-prompt="Plan a family day under $25 for 4 people">A family day out ↗</button></div>
+      <form id="chat-form" class="chat-input"><label for="chat-input" class="sr-only">Message your companion</label><input id="chat-input" placeholder="Tell me what your weekend needs…" maxlength="1200" required><button class="button dark" id="send-chat" type="submit">Send ↗</button></form></div>
+      </div>
+      <div id="chat-cards" class="card-grid chat-results"></div>
+      <div id="chat-plan" class="chat-plan" aria-live="polite"></div>
+    </section>
+    <section id="insights" class="view"><div class="page-heading"><div class="eyebrow">THE STORY BEHIND THE SUGGESTIONS</div><h1>A little curiosity.<br>A lot of <em>possibility.</em></h1><p>Explore the synthetic data and the models that power this prototype.</p></div><div id="insights-status" role="status"></div><div id="stats" class="stats-grid"></div><div class="insights-grid"><section class="insight-box"><h3>What kind of day feels good?</h3><p>Average synthetic satisfaction by category · out of 5</p><div id="category-chart" class="bar-chart"></div></section><section class="insight-box"><h3>Does the weather change things?</h3><p>Generated visitor satisfaction by weather · out of 5</p><div id="weather-chart" class="bar-chart"></div><div class="insight-callout">These patterns come from the data generator, not real visitor research.</div></section><section class="insight-box"><h3>Two small models, useful jobs.</h3><p><strong>Recommendation search</strong><br>TF-IDF turns descriptions and tags into numbers. Cosine similarity ranks relevant places, while your filters enforce budget, time, and suitability.</p><p><strong>Satisfaction exercise</strong><br>A Random Forest predicts generated satisfaction from pre-visit preferences, prices, and weather. It is separate from the recommendation ranking.</p></section><section class="insight-box"><h3>How did the model do?</h3><div id="model-metrics"></div><p>Test attractions are held out entirely, so the same place never appears in both training and evaluation. Post-visit outcomes are excluded from inputs.</p></section></div></section>
+  </main>
+  <footer><a class="brand" href="/">weekend<span class="brand-light">roulette</span><span class="tiny-star">✦</span></a><p>Made for a little more wandering.</p><span>PHNOM PENH · SYNTHETIC DEMO</span><a href="/docs" target="_blank" rel="noopener">API docs ↗</a></footer>
+  <dialog id="detail-dialog"><button id="close-dialog" class="dialog-close" aria-label="Close place details">×</button><div id="detail-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
